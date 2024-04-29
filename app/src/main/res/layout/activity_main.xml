@@ -24,21 +24,22 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/settingseditview"/>
     <Button
-        android:text="@string/save"
-        android:layout_below="@+id/settingseditview"
+        android:id="@+id/prefButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/prefButton"
-        android:onClick="savePref"/>
+        android:onClick="onButtonClickIntent"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
-        android:layout_below="@+id/prefButton"
+        android:id="@+id/prefText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/prefText"/>
+        android:layout_below="@+id/prefButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
