@@ -6,7 +6,8 @@ Veckans uppgift handlade om att arbeta med Shared Preferences för att spara dat
 I ***MainActivity:s*** *onCreate()* hämtas en *SharedPreference* vid namn *"MyPreferenceName"*(Jätte kreativ tack jag vet.) som är satt som *MODE_PRIVATE*
 detta är för att denna preferens enbart ska kunna hämtas av denna application. Om preferencen *"MyPreferenceName"* finns skappas den.
 Sedan finns det en text view som hämtar strängen med namn *"MyAppPreferenceString"* ifrån den delade preferensen och lägger den som sin text. Om strängen vid det namnet
-inte finns så skrivs *"No preference found."* ut.
+inte finns så skrivs *"No preference found."* ut. --
+
 
 Det finns också en knapp med en enkel intent som tar dig till nästa activity.
 
